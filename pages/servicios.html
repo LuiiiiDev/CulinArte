@@ -26,84 +26,58 @@
         <a href="#" class="text-xl font-bold text-white">Culin Arte</a>
       </div>
       <ul class="flex space-x-4">
-        <li><a href="#" class="text-white hover:text-gray-300">Inicio</a></li>
-        <li><a href="pages/acerca-de.html" class="text-white hover:text-gray-300">Acerca de</a></li>
-        <li><a href="pages/servicios.html" class="text-white hover:text-gray-300">Servicios</a></li>
-        <li><a href="pages/Contactanos.html" class="text-white hover:text-gray-300">Contacto</a></li>
+        <li><a href="../index.html" class="text-white hover:text-gray-300">Inicio</a></li>
+        <li><a href="../pages/acerca-de.html" class="text-white hover:text-gray-300">Acerca de</a></li>
+        <li><a href="../pages/servicios.html" class="text-white hover:text-gray-300">Servicios</a></li>
+        <li><a href="../pages/Contactanos.html" class="text-white hover:text-gray-300">Contacto</a></li>
       </ul>
     </div>
   </nav>
 
-  <div class="container mx-auto">
-    <div class="my-8">
-      <h2 class="text-2xl font-bold mb-4">Productos</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="bg-white rounded-lg shadow-md p-6 product-card">
-          <h3 class="text-lg font-bold mb-2">Aplicación Móvil y de Escritorio</h3>
-          <p>Para clases de cocina en línea.</p>
-        </div>
-        <div class="bg-white rounded-lg shadow-md p-6 product-card">
-          <h3 class="text-lg font-bold mb-2">Servicio de Entrega de Ingredientes</h3>
-          <p>Para las clases.</p>
-        </div>
-        <div class="bg-white rounded-lg shadow-md p-6 product-card">
-          <h3 class="text-lg font-bold mb-2">Acceso a Clases Virtuales</h3>
-          <p>Impartidas por chefs reconocidos.</p>
-        </div>
-        <div class="bg-white rounded-lg shadow-md p-6 product-card">
-          <h3 class="text-lg font-bold mb-2">Recetas Exclusivas</h3>
-          <p>Para interacción y apoyo entre usuarios.</p>
-        </div>
-        <div class="bg-white rounded-lg shadow-md p-6 product-card">
-          <h3 class="text-lg font-bold mb-2">Personalización de Clases</h3>
-          <p>Según las preferencias y habilidades del usuario.</p>
-        </div>
+  <div class="container mx-auto mt-8">
+    <h2 class="text-center text-2xl font-semibold mb-4">Agendar Cita</h2>
+    <form id="citaForm" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+      <div class="mb-4 flex items-center justify-center">
+        <label for="nombre" class="block">
+          <img src="../imgs/Logo-removebg-preview.png" alt="Imagen" class="h-16 w-16 mb-2">
+        </label>
       </div>
-    </div>
-
-    <div class="my-8">
-      <h2 class="text-2xl font-bold mb-4">Servicios</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="bg-white rounded-lg shadow-md p-6 service-card">
-          <h3 class="text-lg font-bold mb-2">Clases de Cocina</h3>
-          <p>En vivo y bajo demanda.</p>
-        </div>
-        <div class="bg-white rounded-lg shadow-md p-6 service-card">
-          <h3 class="text-lg font-bold mb-2">Asistencia Técnica</h3>
-          <p>Para usuarios de la aplicación.</p>
-        </div>
-        <div class="bg-white rounded-lg shadow-md p-6 service-card">
-          <h3 class="text-lg font-bold mb-2">Envío de Ingredientes</h3>
-          <p>Seguro y puntual.</p>
-        </div>
+      <div class="mb-4">
+        <input type="text" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="nombre" name="nombre" required>
       </div>
-    </div>
-
-    <div class="my-8">
-      <h2 class="text-2xl font-bold mb-4">Planes de Pago</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="bg-white rounded-lg shadow-md p-6 plan-card">
-          <h3 class="text-lg font-bold mb-2">Plan Básico</h3>
-          <p>Pago mensual de $9.99.</p>
-          <ul class="list-disc pl-6">
-            <li>Acceso ilimitado a clases en vivo y bajo demanda.</li>
-            <li>Descuentos exclusivos en la compra de ingredientes frescos.</li>
-            <li>Comunidad en línea para interacción y apoyo entre usuarios.</li>
-          </ul>
-        </div>
-        <div class="bg-white rounded-lg shadow-md p-6 plan-card">
-          <h3 class="text-lg font-bold mb-2">Plan Premium</h3>
-          <p>Pago anual de $99.99 con un descuento del 20%.</p>
-          <ul class="list-disc pl-6">
-            <li>Todos los beneficios del plan básico.</li>
-            <li>Acceso prioritario a eventos especiales y clases exclusivas.</li>
-            <li>Servicio de entrega de ingredientes frescos sin costo adicional.</li>
-            <li>Sesiones de asesoramiento culinario personalizado con chefs expertos.</li>
-          </ul>
-        </div>
+      <div class="mb-4">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="fecha">Fecha:</label>
+        <input type="date" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="fecha" name="fecha" required>
       </div>
-    </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="hora">Hora:</label>
+        <input type="time" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="hora" name="hora" required>
+      </div>
+      <div class="flex items-center justify-between">
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Agendar</button>
+      </div>
+    </form>
   </div>
+
+  <!-- SweetAlert JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  <script>
+    document.getElementById('citaForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nombre = document.getElementById('nombre').value;
+      const fecha = document.getElementById('fecha').value;
+      const hora = document.getElementById('hora').value;
+
+      // Aquí puedes agregar lógica adicional para enviar los datos a tu backend
+      // y luego mostrar el mensaje de éxito
+
+      // Ejemplo de alerta con SweetAlert
+      swal("Cita Agendada", `Hola ${nombre}, tu cita para el ${fecha} a las ${hora} ha sido agendada correctamente.`, "success");
+      
+      // Limpiar el formulario después de la cita agendada
+      document.getElementById('citaForm').reset();
+    });
+  </script>
 
   <footer class="footer py-4 bg-gray-800 text-white text-center">
     <div class="container mx-auto">
